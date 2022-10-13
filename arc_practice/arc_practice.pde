@@ -9,11 +9,7 @@ void setup() { // called once
 
 void draw()  { // called in a loop
 
-  if (keyPressed) {
-    background(0, 0, 200);
-  } else {
-    background(200, 0, 0);
-  }
+  background(0, 0, 200);
   fill(#32a852);
   stroke(#006080);
   strokeWeight(10);
@@ -21,14 +17,16 @@ void draw()  { // called in a loop
   eyes(width /2, height /2, 280/4);
   //ellipse(300, 200, 200, 100);
   
-  arc(250, 200, 200, 
-  100, radians(135), radians(315));
-  
   mouth(width /2, height /2);
+  
+  if (keyPressed) {
+      fill(0);
+    if (keyCode == UP) {
+        arc(250, 200, 200, 
+    100, radians(135), radians(315)); // beanie  
+    } else if (keyCode == DOWN) {
+        arc(300, 200, 200, 100, radians(180), radians(360)); //yamuka
+    }
+  }
 
 }
-
-//void mousePressed() {
-//  arc(300, 200, 200, 100, radians(180), radians(360));
-//  // that is a yamuka
-//}
