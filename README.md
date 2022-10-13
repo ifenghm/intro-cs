@@ -68,7 +68,26 @@ If you have an existing git repository downloaded onto another computer (you've 
 ```
 feng@IFeng intro-cs %git pull 
 ```
-
+Afterwards, it may say something like: 
+```
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 12 (delta 7), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (12/12), 3.88 KiB | 794.00 KiB/s, done.
+From github.com:ifenghm/intro-cs
+   794efb7..2bd7a80  main       -> origin/main
+Updating 794efb7..2bd7a80
+Fast-forward
+ README.md | 78 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 78 insertions(+)
+ create mode 100644 README.md
+```
+To show you what files changed, but it could also say something like: 
+```
+Already up to date.
+```
+If you've already synced. 
 
 ## The process, summarized. 
 - `git pull` 
