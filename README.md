@@ -71,8 +71,8 @@ feng@IFeng intro-cs %git pull
 
 
 ## The process, summarized. 
-`git pull` 
-`git add <files>` 
-`git commit -m "my changes"` 
-`git push` 
+- `git pull` 
+- `git add <files>` 
+- `git commit -m "my changes"` 
+- `git push` 
 
