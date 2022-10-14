@@ -1,4 +1,4 @@
-# intro-cs
+# intro-cs changes
 
 ## 1. How to copy down your git repository to your local repository! 
 
@@ -17,6 +17,8 @@ Resolving deltas: 100% (2/2), done.
 
 
 ## 2. How to push new changes to a certain repository. We'll be doing this EVERY DAY so that we don't lose our work. 
+
+> **_NOTE:_** This is 
 
 1. Have new changes to push to the git repo! 
 I moved my `custom_shape` directory into my git repository. 
@@ -61,6 +63,8 @@ To github.com:ifenghm/intro-cs.git
 ```
 
 You should see your changes now! 
+
+![woohoo!](http://www.reactiongifs.com/r/cheering_minions.gif)
 
 ## 3. How to sync other computers with your current work.
 
