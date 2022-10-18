@@ -1,6 +1,11 @@
 # intro-cs changes
 
+This process shows you how to work with github: primarily, pushing changes in files on your computer to github, and downloading files from github TO your computer! It's a great marketplace :) 
+
 ## 1. How to copy down a git repository to your local repository! 
+
+>NOTE: You have to create an SSH key for every computer you want to push changes to via terminal. Follow the directions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), I will also walk through this in class and might have a video posted on how to do this. 
+
 
 Get the URL of the github repository you want to download. You can find it by clicking on the green "Code" button on the homepage of a repository (example pic below is this repository: https://github.com/ifenghm/intro-cs). 
 
@@ -23,8 +28,6 @@ Resolving deltas: 100% (2/2), done.
 ## 2. How to push new changes to a certain repository via Terminal
 
 We'll be doing this EVERY DAY so that we don't lose our work. 
-
->NOTE: You have to create an SSH key for every computer you want to push changes to via terminal. Follow the directions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), I will also walk through this in class and might have a video posted on how to do this. 
 
 1. Have new changes to push to the git repo! 
 I moved my `custom_shape` directory into my git repository. 
