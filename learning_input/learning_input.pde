@@ -15,7 +15,6 @@ void draw() { // called in a loop
   }
   strokeWeight(10);
   square(400, 400, 200);
-  //noStroke(); 
   stroke(0, 100, 0);
   triangle(400, 400, 
   500, 300,
@@ -23,7 +22,7 @@ void draw() { // called in a loop
   if (mousePressed) {
       textSize(50);
       text(
-      "Happy Birthday Emily!",
+      "Hello!",
   mouseX, 
   mouseY);
   }
