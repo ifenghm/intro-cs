@@ -25,7 +25,7 @@ void keyPressed() { // called when key is pressed
     t = "Goodbye";
     flag = false;
   } else {
-    shephard = "Hello";
+    t = "Hello";
     flag = true;
   }
 }
