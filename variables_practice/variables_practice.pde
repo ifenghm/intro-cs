@@ -1,5 +1,5 @@
-String t = "";
-int n = 0;
+String t = "wield";
+int n = 20;
 float f = 0.0;
 boolean flag = true;
 
@@ -12,15 +12,14 @@ void draw() {
   circle(500, 500, n);
   if (flag) {
      n = n + 1;
+     f = f + .2;
   }
   fill(0, 0, 100);
   square(0, 0, f);
-  f = f + .2;
 }
 
-void keyPressed() {
-  //t = t + key;
-  // Challenge: to make backspace work
+void keyPressed() { // called when key is pressed
+  print(key + " ,");
   if (key == 'w') {
     t = "Goodbye";
     flag = false;
