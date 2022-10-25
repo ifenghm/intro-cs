@@ -1,11 +1,12 @@
 String t = "wield";
+int n = 10;
 float f = 0.0;
 boolean flag = true; 
 
 void draw() {
   background(60, 250, 20);
   textSize(50);
-  text(shephard, 200, 300);
+  text(t, 200, 300);
   fill(161, 186, 246);
 
   square(50, 50, n);
