@@ -6,8 +6,9 @@ void setup() {
 
 void draw() {
   background(100, 2, 140);
-  translate(500, 500);
-  rotate(radians(r)); // rotate by 45 degrees
+  translate(500, 500); // translate(x, y) creates our new point of origin
+  // everything will be written in relative to 500, 500, as well as rotate with the Origin as the "pivot" point 
+  rotate(radians(r));
   r = r + dr;
   println(r);
   circle(200, 0, 100);
