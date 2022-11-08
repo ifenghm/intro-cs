@@ -1,61 +1,17 @@
-// rotation 
-float c = 0;
-boolean pause = false;
+int r = 1;
+int dr = 1;
 void setup() {
-  size(1000, 1000);
+  size(1000, 1000); 
 }
 
 void draw() {
-  background(#ff33ed);
+  background(100, 2, 140);
   translate(500, 500);
-
-  if (!pause) {
-    c = c + .02;
-  }
-  // could also mod and get rid of the reset
-  if (c > 2* PI) {
-    c = 0;
-  }
-  // UNCOMMENT THIS FOR MOVEMENT
-  // rotate(c); 
-  fill(#ffffff, 200);
-  
-  //circle(300, 0, 100);
-  //circle(0, -300, 100);
-  //circle(0, 300, 100);
-  //circle(-300, 0, 100);
-  //circle(300 / sqrt(2), -300 / sqrt(2), 100);
-  //circle(300 / sqrt(2), 300 / sqrt(2), 100);
-  //circle(-300 / sqrt(2), 300 / sqrt(2), 100);
-  //circle(-300 / sqrt(2), -300 / sqrt(2), 100);
-  
-  // rotation is much better 
-  // than what we have above, 
-  // we had to do a lot of math to get there! :) 
-  
-  circle(300, 0, 100);
-  rotate(radians(45));
-  circle(300, 0, 100);
-  rotate(radians(45));
-  circle(300, 0, 100);
-  rotate(radians(45));
-  circle(300, 0, 100);
-  rotate(radians(45));
-  circle(300, 0, 100);
-  rotate(radians(45));
-  circle(300, 0, 100);
-  rotate(radians(45));
-  circle(300, 0, 100);
-  rotate(radians(45));
-  circle(300, 0, 100);
-  rotate(radians(45));
-}
-
-void mousePressed() {
-  println(mouseX);
-  pause = true;
-}
-
-void mouseReleased() {
-  pause = false;
+  rotate(radians(r)); // rotate by 45 degrees
+  r = r + dr;
+  println(r);
+  circle(200, 0, 100);
+  circle(0, 200, 100);
+  circle(-200, 0, 100);
+  circle(0, -200, 100);
 }
