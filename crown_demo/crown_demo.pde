@@ -8,6 +8,8 @@ void draw() {
   translate(200, 200);
   crown();
   
+  // 3 crowns to make a fun outline
+
   translate(300, 0);
   crown();
   
@@ -23,6 +25,9 @@ void draw() {
 }
 
 
+
+// got from an old assignment! 
+// https://github.com/ifenghm/intro-cs/blob/main/custom_shape/custom_shape.pde
 void crown() {
   push();
   translate(-485, -450);
