@@ -6,30 +6,41 @@ float r2 = 220;
 float g2 = 170;
 float b2 = 105;
 
-int numColors = 3;
+int numColors = 100;
 void setup() {
   size(600, 600);
-  strokeWeight(50);
+  strokeWeight((float)200/numColors);
 
 }
 
 void draw() {
-  stroke(r1, g1, b1);
-  line(200, 200, 200, 300);
-
-  // middle colors
-
-  int l = 1;
-  while (l < 4) {
-    float r4 = map(0 + .25 * l, 0, 1, r1, r2);
-    float g4 = map(0 + .25 * l, 0, 1, g1, g2);
-    float b4 = map(0 + .25 * l, 0, 1, b1, b2);
+  // parameterized the loop so can create a gradient with any number of colors i want.
+  int l = 0;
+  while (l <= numColors) {
+    float r4 = map(1.0*l/numColors, 0, 1, r1, r2);
+    float g4 = map(1.0*l/numColors, 0, 1, g1, g2);
+    float b4 = map(1.0*l/numColors, 0, 1, b1, b2);
     stroke(r4, g4, b4);
-    line(200 + 50 * l, 200, 200 + 50 * l, 300);
+    line(200 + 200.0 * l / numColors, 200, 200 + 200.0*l / numColors, 300);
     l = l + 1;
   }
   
+  // unparameterized loop version
+  //  int l = 0;
+  //while (l <= 4) {
+  //  float r4 = map(0 + .25 * l, 0, 1, r1, r2);
+  //  float g4 = map(0 + .25 * l, 0, 1, g1, g2);
+  //  float b4 = map(0 + .25 * l, 0, 1, b1, b2);
+  //  stroke(r4, g4, b4);
+  //  line(200 + 50 * l, 200, 200 + 50 * l, 300);
+  //  l = l + 1;
+  //}
+  
   // unlooped version
+  // stroke(r1, g1, b1);
+  // line(200, 200, 200, 300);
+
+
   //float r4 = map(0 + .25 * l, 0, 1, r1, r2);
   //float g4 = map(0 + .25 * l, 0, 1, g1, g2);
   //float b4 = map(0 + .25 * l, 0, 1, b1, b2);
@@ -51,6 +62,6 @@ void draw() {
   //line(200 + 50 * l, 200 , 200 + 50 * l, 300);
 
   // end color
-  stroke(r2, g2, b2);
-  line(400, 200, 400, 300);
+  //stroke(r2, g2, b2);
+  //line(400, 200, 400, 300);
 }
