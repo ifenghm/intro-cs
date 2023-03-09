@@ -7,8 +7,8 @@ Fun practice challenge with loops!
 
 1. Make 10 towers using a loop! 
 2. How can you alternate between drawing a person and drawing a cat in the loop? 
--- hint, maybe think about isCat? 
 3. How do you make the cats eyes move? What variable should you change? 
+-- hint, read the kitty() function, and the variables up there! it should be a very easy change. 
 
 */
 void setup() {
