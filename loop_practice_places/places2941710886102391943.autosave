@@ -1,16 +1,22 @@
 float kittyEyesOffset = 0;
-float kittyEyesDx = .2; 
+float kittyEyesDx = 0; 
 // ANSWER FOR #3, you just need to read the kitty function!
 
 float r1 = random(100, 120);
 float g1 = random(200, 233);
 float b1 = random(180, 210);
-/* 
-1. Make 10 towers using a loop! 
-2. How can you alternate between drawing a person and drawing a cat in the loop? 
-3. How do you make the cats eyes move? What variable should you change? 
--- hint, read the kitty() function, and the variables up there! it should be a very easy change. 
 
+int isCat = (int) random(2);
+
+/*
+ Fun practice challenge with loops!
+ 
+ 1. Make 10 towers using a loop!
+ 2. How can you alternate between drawing a person
+ and drawing a cat in the loop?
+ 3. How do you make the cats eyes move?
+ What variable should you change?
+ 
  */
 void setup() {
   size(1400, 600);
