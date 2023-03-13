@@ -1,16 +1,23 @@
 float kittyEyesOffset = 0;
-float kittyEyesDx = 0;
+float kittyEyesDx = .2; 
+// ANSWER FOR #3, you just need to read the kitty function!
 
-int isCat = (int) random(2); 
-/* 
-Fun practice challenge with loops! 
+float r1 = random(100, 120);
+float g1 = random(200, 233);
+float b1 = random(180, 210);
 
-1. Make 10 towers using a loop! 
-2. How can you alternate between drawing a person and drawing a cat in the loop? 
--- hint, maybe think about isCat? 
-3. How do you make the cats eyes move? What variable should you change? 
+int isCat = (int) random(2);
 
-*/
+/*
+ Fun practice challenge with loops!
+ 
+ 1. Make 10 towers using a loop!
+ 2. How can you alternate between drawing a person
+ and drawing a cat in the loop?
+ 3. How do you make the cats eyes move?
+ What variable should you change?
+ 
+ */
 void setup() {
   size(1400, 600);
   rectMode(CENTER);
@@ -18,18 +25,57 @@ void setup() {
 
 void draw() {
   background(155);
-  if (isCat == 1) {
-    tower(300, 300, 200, "kitty", color(222, 135, 12));
-  } else {
-    tower(300, 300, 200, "person", color(222, 135, 12));
+  // ANSWERS BELOW:
+
+  // #1: for loop, draw a pair of towers 5 times.
+  for (int t = 0; t< 5; t = t + 1) {
+    // person every 300 pixels
+    tower(t * 300, 300, 300, "person",
+      color(222, 135, 12));
+    // kitty every 300 as well but show up halfway between others.
+    tower(t * 300 + 150, 300, 400, "kitty",
+      color(r1, g1, b1));
   }
-  tower(300, 500, 400, "person", color(222, 135, 12));
-  tower(600, 500, 200, "kitty", color(124, 166, 233));
+
+  /* another way you can do it is count from 0 to 9
+   check if t is even using an if statement
+   */
+  // for (int t = 0; t< 10; t = t + 1) {
+  // // #2: t % 2 == 0 is checking if t is even.
+  //  if (t % 2 == 0) {
+  //tower(t * 150, 300, 300, "person",
+  //color(222, 135, 12));
+  //} else {
+  //tower(t * 150, 300, 400, "kitty",
+  //  color(r1, g1, b1));
+  //}
+
+  /*
+   IF YOU WANT CONTROLLED RANDOMNESS,
+   you can utilize frameCount (counts up after every draw() loop)
+   and say "randomize every n frames"
+   below, I say every 40 frames by using the
+   mod operator (%).
+   You will not need to know this for the quiz,
+   but it's cool to tie in what we learned semester1
+   with what we're learning now.
+   
+   */
+  // UNCOMMENT FOR SOME FUN STUFF
+  //textSize(30);
+  //text(frameCount, 300, 400);
+  //if (frameCount % 40 == 0) {
+  //  r1 = random(0, 120);
+  //  g1 = random(100, 233);
+  //  b1 = random(180, 210);
+  //  isCat = (int) random(2);
+  //}
 }
 
-void tower(float xCenter, float yBottom, float h, String figure, color col) {
+void tower(float xCenter, float yBottom,
+  float h, String figure, color col) {
   float spacing = 30;
-  int numLayers = (int) max(h / spacing, 10);
+  int numLayers = (int) max(h / spacing, 5);
   for (int n = 1; n <= numLayers; n++) {
     if (n % 2 == 0) {
       fill(col);
