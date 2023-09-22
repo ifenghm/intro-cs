@@ -2,7 +2,7 @@
 
 This process shows you how to work with github: primarily, pushing changes in files on your computer to github, and downloading files from github TO your computer! It's a great marketplace :) 
 
->NOTE: You have to create an SSH key for *every* computer you want to push changes to via terminal. Follow the directions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), I will also walk through this in class and might have a video posted on how to do this. 
+>NOTE: As of 2021, you need to have higher-security authentication than a simple password. use a [PAT](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) rather than a password.You can also use an SSH key which is more secure, but more complicated to set up. I will walk you through the PAT process in class; if you are not in class you will be prompted to set it up either when you git clone (for private repos) or when you git push (for public repos).
 
 
 ## 1. How to copy down a git repository to your local repository! 
