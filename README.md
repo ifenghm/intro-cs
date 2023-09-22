@@ -11,7 +11,7 @@ Get the URL of the github repository you want to download. You can find it by cl
 
 <img width="648" alt="Screen Shot 2022-10-15 at 5 05 26 PM" src="https://user-images.githubusercontent.com/113121183/196007558-42bc6d1f-5f50-45cd-a340-027e179e8d95.png">
 
-Go to where you save your Processing projects in Terminal, and type `git clone <GIT URL WHEN YOU CLICK CODE>`  
+Go to where you save your projects in Terminal, and type `git clone <GIT URL WHEN YOU CLICK CODE>`  
 
 ```
 feng@IFeng ~ %cd ~/Documents/Processing
@@ -34,7 +34,7 @@ I moved my `custom_shape` directory into my git repository.
 ```
 feng@IFeng Processing %mv custom_shape intro-cs
 ``` 
-- or just save your work directly to the name of your github repository (it should be intro-cs).
+- you could directly save your work here without moving as well. 
 
 2. Go (`cd`) into your git repository and type `git add <whatever files you want to add>` to add these files to github. 
 ```
@@ -77,7 +77,10 @@ You should see your changes now!
 
 ## 3. How to sync other computers with your current work.
 
-If you have an existing git repository downloaded onto another computer (you've cloned once before), and you want to download any changes you or anyone else has made, this is the step for you! We'll be doing this EVERY DAY so we make sure our work is not lost. 
+If you've already cloned a repo, and you want to download any changes you or anyone else has made, this is the step for you! 
+Downloading the changes is called pulling. 
+We'll be doing this EVERY DAY so we make sure our work is not lost. 
+Run `git pull` command when have `cd`'d into your git repository:
 ```
 feng@IFeng intro-cs %git pull 
 ```
@@ -100,9 +103,9 @@ To show you what files changed, but it could also say something like:
 ```
 Already up to date.
 ```
-If you've already synced. 
+If you have the latest version 
 
-## EVERY DAY: Repeat steps 2 and 3 after getting a repo.
+## EVERY DAY: Repeat steps 3 and 2 (we sync / pull first, then push!) after getting a repo.
 - `git pull` 
 - `git add <files>` 
 - `git commit -m "my changes"` 
