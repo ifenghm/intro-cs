@@ -2,7 +2,7 @@
 
 This process shows you how to work with github: primarily, pushing changes in files on your computer to github, and downloading files from github TO your computer! It's a great marketplace :) 
 
->NOTE: You have to create an SSH key for *every* computer you want to push changes to via terminal. Follow the directions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), I will also walk through this in class and might have a video posted on how to do this. 
+>NOTE: You have to create an SSH key for *every* computer you want to push changes to via terminal. Follow the directions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 
 ## 1. How to copy down a git repository to your local repository! 
